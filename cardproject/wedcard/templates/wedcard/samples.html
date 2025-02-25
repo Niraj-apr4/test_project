@@ -4,6 +4,7 @@
     <ul>
         {% for sample in samples %}
             <li>
+	      {{ sample.price }}
 	      <!-- <h2><a href="{% url 'detail' pk=sample.pk %}"> <img src="{{ sample.front_image.url }}" width="200"></a></h2> -->
 <img src="{{ sample.front_image.url }}" width="200">
 <h2><a href="{% url 'detail' pk=sample.pk %}"> <img src="{{ sample.model_id }}" width="200"></a></h2>
