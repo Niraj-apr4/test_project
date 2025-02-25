@@ -18,8 +18,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Media files configuration
 MEDIA_URL = '/media/'  # URL to access media files
-#MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Physical location on your server
-MEDIA_ROOT = os.path.join(BASE_DIR, 'cardproject/media')  # Adjust this path if needed
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Physical location on your server
 
 
 # Quick-start development settings - unsuitable for production
