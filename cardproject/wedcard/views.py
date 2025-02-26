@@ -10,6 +10,9 @@ def base(request):
 def update(request):
     return render(request, 'wedcard/update.html', {})
 
+def update1(request):
+    return render(request, 'wedcard/update1.html', {})
+
 # def contact(request):
 #     return render(request, 'wedcard/about.html', {})
 

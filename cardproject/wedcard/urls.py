@@ -8,6 +8,7 @@ urlpatterns = [
     path(""              , views.base,        name="base"),
     # path("about/"        , views.about,       name="about"),
     path("update/"       , views.update,       name="update"),
+    path("update1/"       , views.update1,       name="update1"),
     # path("contact/"      , views.contact,     name="contact"),
     # path("notice/"       , views.notice,       name="notice"),
     # path("news/"         , views.news,           name="news"),
