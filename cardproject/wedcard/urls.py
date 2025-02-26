@@ -8,7 +8,10 @@ urlpatterns = [
     path(""              , views.base,        name="base"),
     path("about/"        , views.about,       name="about"),
     path("contact/"      , views.contact,     name="contact"),
-    path('sample_view/'   , views.sample_view, name='sample_view'),
+    path("notice/"       , views.notice,       name="notice"),
+    path("news/"         , views.news,           name="news"),
+    path("remarks/"      , views.remarks,     name="remarks"),
+    path('sample_view/'  , views.sample_view, name='sample_view'),
     path('card/<int:pk>/', views.detail,      name='detail'),
 ]
 if settings.DEBUG:
