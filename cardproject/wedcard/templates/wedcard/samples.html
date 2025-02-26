@@ -1,11 +1,14 @@
 {% extends 'wedcard/base.html' %}
 
 {% block content %}
-    <ul>
-        {% for sample in samples %}
-            <li>
-	      {{ sample.price }}
-            </li>
-        {% endfor %}
-    </ul>
+{% for sample in samples %}
+    <li>
+        Debug info: {{ sample }}
+        {% if sample.price %}
+            Price: {{ sample.price }}
+        {% else %}
+            No price available
+        {% endif %}
+    </li>
+{% endfor %}
 {% endblock %}
