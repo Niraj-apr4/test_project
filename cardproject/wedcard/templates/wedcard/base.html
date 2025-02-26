@@ -13,25 +13,47 @@
     <header>
         <div class="logo-container">
             <img src="{% static 'images/logo.jpeg' %}" alt="Sadicards.com Logo" class="logo">
-            <div class="tagline">Unite with Family & Friends</div>
         </div>
         <nav class="top-nav">
             <ul>
-                <li><a href="{% url 'about' %}">About us</a></li>
-                <li><a href="{% url 'contact' %}">Contact</a></li>
-                <li><a href="{% url 'notice' %}">Notice</a></li>
-                <li><a href="{% url 'news' %}">News</a></li>
-                <li><a href="{% url 'remarks' %}">Remarks</a></li>
+                <li><a href="{% url 'update' %}">About us</a></li>
+                <li><a href="{% url 'update' %}">Contact</a></li>
+                <li><a href="{% url 'update' %}">Notice</a></li>
+                <li><a href="{% url 'update' %}">News</a></li>
+                <li><a href="{% url 'update' %}">Remarks</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="wedding-banner">
-        <h2>Click Here For wedding card. शादी कार्ड के लिए क्लिक करें।</h2>
-        <p>There is no return police in cards after order and payment Placement.</p>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="{% url 'base' %}">Home</a></li>
+            <li><a href="{% url 'update' %}">Invitation</a></li>
+            <li><a href="{% url 'update' %}">Wedding Stationery</a></li>
+            <li><a href="{% url 'update' %}">Gifts</a></li>
+            <li><a href="{% url 'update' %}">Sms Board</a></li>
+            <li><a href="{% url 'update' %}">E-Invitation</a></li>
+            <li><a href="{% url 'update' %}">Our Vlogs</a></li>
+        </ul>
+    </nav>
+
+{% block content %}
+{% endblock %}
+
+    <div class="banner-container">
+        <div class="wedding-cards-banner">
+            <div class="card-images">
+                <img src="{% static 'images/wedding-card1.jpeg' %}" alt="Wedding Card" class="card-image">
+                <img src="{% static 'images/wedding-card2.jpeg' %}" alt="Wedding Card" class="card-image">
+                <img src="{% static 'images/wedding-card3.jpeg' %}" alt="Wedding Card" class="card-image">
+                <img src="{% static 'images/wedding-card4.jpeg' %}" alt="Wedding Card" class="card-image">
+            </div>
+            <div class="banner-text">
+                <div class="wedding-text">Click Here For wedding card. शादी कार्ड के लिए क्लिक करें।</div>
+                <div class="policy-text">There is no return police in cards after order and payment Placement.</div>
+            </div>
+        </div>
     </div>
-
-
 
 </body>
 </html>

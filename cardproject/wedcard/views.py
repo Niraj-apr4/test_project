@@ -7,20 +7,23 @@ from .models import wedding_card
 def base(request):
     return render(request, 'wedcard/base.html', {})
 
-def about(request):
-    return render(request, 'wedcard/about.html', {})
+def update(request):
+    return render(request, 'wedcard/update.html', {})
 
-def contact(request):
-    return render(request, 'wedcard/about.html', {})
+# def contact(request):
+#     return render(request, 'wedcard/about.html', {})
 
-def notice(request):
-    return render(request, 'wedcard/about.html', {})
+# def notice(request):
+#     return render(request, 'wedcard/about.html', {})
 
-def news(request):
-    return render(request, 'wedcard/about.html', {})
+# def news(request):
+#     return render(request, 'wedcard/about.html', {})
 
-def remarks(request):
-    return render(request, 'wedcard/about.html', {})
+# def remarks(request):
+#     return render(request, 'wedcard/about.html', {})
+
+# def about(request):
+#     return render(request, 'wedcard/about.html', {})
 
 def sample_view(request):
     samples = wedding_card.objects.all()  # Fetch all Sample objects
