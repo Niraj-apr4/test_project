@@ -1,0 +1,10 @@
+{% extends 'wedcard/base.html' %}
+{% load static %}
+
+{% block update %}
+{% for sample in samples %}
+    <li>
+      {{ sample.model_id }}
+    </li>
+{% endfor %}
+{% endblock %}

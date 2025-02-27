@@ -8,12 +8,11 @@ urlpatterns = [
     path(""              , views.home,        name="home"),
     # path("about/"        , views.about,       name="about"),
     path("update/"       , views.update,       name="update"),
-    path("update1/"       , views.update1,       name="update1"),
+    path("cards/"       , views.cards,       name="cards"),
     # path("contact/"      , views.contact,     name="contact"),
     # path("notice/"       , views.notice,       name="notice"),
     # path("news/"         , views.news,           name="news"),
     # path("remarks/"      , views.remarks,     name="remarks"),
-    path('sample_view/'  , views.sample_view, name='sample_view'),
     path('card/<int:pk>/', views.detail,      name='detail'),
 ]
 if settings.DEBUG:

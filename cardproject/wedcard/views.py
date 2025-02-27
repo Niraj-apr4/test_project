@@ -10,9 +10,6 @@ def home(request):
 def update(request):
     return render(request, 'wedcard/update.html', {})
 
-def update1(request):
-    return render(request, 'wedcard/update1.html', {})
-
 # def contact(request):
 #     return render(request, 'wedcard/about.html', {})
 
@@ -28,9 +25,9 @@ def update1(request):
 # def about(request):
 #     return render(request, 'wedcard/about.html', {})
 
-def sample_view(request):
+def cards(request):
     samples = wedding_card.objects.all()  # Fetch all Sample objects
-    return render(request, 'wedcard/samples.html', {'samples': samples})
+    return render(request, 'wedcard/cards.html', {'samples': samples})
 
 def detail(request, pk):
     card = get_object_or_404(wedding_card, pk=pk)
