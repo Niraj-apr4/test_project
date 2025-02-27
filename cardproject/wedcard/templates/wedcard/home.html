@@ -1,0 +1,90 @@
+{% extends 'wedcard/base.html' %}
+{% load static %}
+
+{% block home %}
+    <div class="banner-container">
+        <div class="wedding-cards-banner">
+            <div class="card-images">
+                <img src="{% static 'images/wedding-card1.jpeg' %}" alt="Wedding Card" class="card-image">
+                <img src="{% static 'images/wedding-card2.jpeg' %}" alt="Wedding Card" class="card-image">
+                <img src="{% static 'images/wedding-card3.jpeg' %}" alt="Wedding Card" class="card-image">
+                <img src="{% static 'images/wedding-card4.jpeg' %}" alt="Wedding Card" class="card-image">
+            </div>
+            <div class="banner-text">
+                <div class="wedding-text">Click Here For wedding card. शादी कार्ड के लिए क्लिक करें।</div>
+                <div class="policy-text">There is no return policy in cards after order and payment Placement.</div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="product-categories">
+        <div class="category-row">
+            <div class="category-item">
+                <a href="{% url 'update' %}">
+                    <div class="category-img-placeholder"></div>
+                    <div class="category-label">Cards</div>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="{% url 'update' %}">
+                    <div class="category-img-placeholder"></div>
+                    <div class="category-label">V. Card</div>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="{% url 'update' %}">
+                    <div class="category-img-placeholder"></div>
+                    <div class="category-label">Box</div>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="{% url 'update' %}">
+                    <div class="category-img-placeholder"></div>
+                    <div class="category-label">Pamphlets</div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="category-row">
+            <div class="category-item">
+                <a href="{% url 'update' %}">
+                    <div class="category-img-placeholder"></div>
+                    <div class="category-label">Brouser</div>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="{% url 'update' %}">
+                    <div class="category-img-placeholder"></div>
+                    <div class="category-label">Calender</div>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="{% url 'update' %}">
+                    <div class="category-img-placeholder"></div>
+                    <div class="category-label">Gifts</div>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="{% url 'update' %}">
+                    <div class="category-img-placeholder"></div>
+                    <div class="category-label">Flex Boards</div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="category-row">
+            <div class="category-item">
+                <a href="{% url 'update' %}">
+                    <div class="category-img-placeholder"></div>
+                    <div class="category-label">E-Cards</div>
+                </a>
+            </div>
+            <div class="about-text">
+                <h3>Celebrate Every Occasion</h3>
+                <p>Sadicards.com is a web page made for the people to get their cards comfortably. we ensure your special day will be unforgettable. Our dedication is to provie quality works and customer satisfaction has earned us an reputation. Please visit our page and select precious latest designs and elevate your event today.</p>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

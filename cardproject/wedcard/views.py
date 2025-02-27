@@ -4,8 +4,8 @@ from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from .models import wedding_card
 
-def base(request):
-    return render(request, 'wedcard/base.html', {})
+def home(request):
+    return render(request, 'wedcard/home.html', {})
 
 def update(request):
     return render(request, 'wedcard/update.html', {})
