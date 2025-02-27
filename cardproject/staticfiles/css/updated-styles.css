@@ -24,7 +24,6 @@ ul {
 /* Header Styles */
 header {
     display: flex;
-    flex-direction: column;
     padding: 10px 0;
 }
 
@@ -36,7 +35,7 @@ header {
 }
 
 .logo {
-    height: 75px;
+    height: 92px; /* Reduced by 20% from 115px */
 }
 
 .tagline {
@@ -50,11 +49,14 @@ header {
     margin-left: auto;
 }
 
+.top-nav {
+    margin-left: auto;
+}
+
 .top-nav ul {
     display: flex;
     justify-content: flex-end;
     gap: 30px;
-    margin-top: 10px;
 }
 
 /* Main Navigation */
@@ -66,7 +68,7 @@ header {
 
 .main-nav ul {
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
     padding: 0 10px;
 }
 
