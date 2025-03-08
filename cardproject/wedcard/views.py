@@ -25,10 +25,10 @@ def update(request):
 # def about(request):
 #     return render(request, 'wedcard/about.html', {})
 
-def cards(request):
-    samples = wedding_card.objects.all()  # Fetch all Sample objects
-    return render(request, 'wedcard/cards.html', {'samples': samples})
+def list_cards(request):
+    cards = wedding_card.objects.all()  # Fetch all Sample objects
+    return render(request, 'wedcard/list_cards.html', {'cards': cards})
 
-def detail(request, pk):
-    card = get_object_or_404(wedding_card, pk=pk)
-    return render(request, 'wedcard/detail.html', {'card': card})
+# def detail(request, pk):
+#     card = get_object_or_404(wedding_card, pk=pk)
+#     return render(request, 'wedcard/detail.html', {'card': card})

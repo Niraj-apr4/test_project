@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+        .left-sidebar {
+            float: left;
+            width: 20%;
+            padding: 10px;
+            border-right: 1px solid #ccc;
+        }
+        .main-content {
+            float: left;
+            width: 78%;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+        .card {
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: center;
+            min-height: 150px;
+        }
+        .card-title {
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        .card-price {
+            color: red;
+            font-weight: bold;
+        }
+        .min-order {
+            background-color: blue;
+            color: white;
+            font-size: 10px;
+            padding: 3px;
+            margin-top: 5px;
+        }
+        .filter-section {
+            margin-bottom: 15px;
+        }
+        .filter-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .categories {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .categories li {
+            margin-bottom: 5px;
+        }
+        .categories li a {
+            color: red;
+            text-decoration: none;
+        }
+        .error-message {
+            color: red;
+            font-size: 12px;
+        }
+        .category-header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Wedding Cards (Religion)</h2>
+    </div>
+    
+    <div class="header">
+        <h3>Premium Cards</h3>
+    </div>
+    
+    <div class="clearfix">
+        <div class="left-sidebar">
+            <h3>Wedding Invitation</h3>
+            <h4>शादी कार्ड</h4>
+            
+            <p>By Categories</p>
+            
+            <div class="filter-section">
+                <div class="filter-title">Rate</div>
+                <input type="text"> upto <input type="text">
+                <div>
+                    <a href="#">High to Low</a> | <a href="#">Low to High</a>
+                </div>
+            </div>
+            
+            <div class="filter-section">
+                <div class="filter-title">Rate</div>
+                <input type="text"> upto
+            </div>
+            
+            <div class="filter-section">
+                <div class="filter-title">Colour</div>
+            </div>
+            
+            <div class="filter-section">
+                <div class="filter-title">Shape</div>
+            </div>
+            
+            <div class="filter-section">
+                <div class="filter-title">Filters</div>
+                <div>Availability</div>
+                <div>In Stock</div>
+                <input type="text"> Pcs. Available
+                <div class="error-message">Sorry, Look for another card you are looking is currently unavailable</div>
+            </div>
+            
+            <div>
+                <a href="#">View All Categories</a>
+            </div>
+            
+            <ul class="categories">
+                <li><a href="#">Wedding Cards</a></li>
+                <li><a href="#">Invitation Cards</a></li>
+                <li><a href="#">Annaprasan Cards</a></li>
+                <li><a href="#">Birthday Cards</a></li>
+                <li><a href="#">Gauna Cards</a></li>
+                <li><a href="#">Donga Cards</a></li>
+                <li><a href="#">Astayaam Cards</a></li>
+                <li><a href="#">Graha pravesh Cards</a></li>
+                <li><a href="#">Opening Ceremony Cards</a></li>
+                <li><a href="#">Puja invitation</a></li>
+                <li><a href="#">Anniversary Invitation</a></li>
+                <li><a href="#">Sok Cards</a></li>
+            </ul>
+            
+            <p>All other Occasion Cards will used in as Invitation cards after Printing.</p>
+            
+            <p>We mostly believe that occasion</p>
+        </div>
+        
+        <div class="main-content">
+            <div class="card-container">
+                <!-- Premium Cards Section -->
+                <div class="card">
+                    <div class="card-title">OM Calligraphy Gold Foiled Golden Damask Design Hindu wedding Card</div>
+                    <div class="card-price">7/Pcs. Without Print</div>
+                    <div class="min-order">Minimum Order should be upto 50 Pcs.</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Swastik Calligraphy Gold Foiled Golden Damask Design Hindu wedding Card</div>
+                    <div class="card-price">7/Pcs. Without Print</div>
+                    <div class="min-order">Minimum Order should be upto 50 Pcs.</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Cross Calligraphy Gold Foiled Golden Damask Design Hindu wedding Card</div>
+                    <div class="card-price">7/Pcs. Without Print</div>
+                    <div class="min-order">Minimum Order should be upto 50 Pcs.</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">OM Calligraphy Gold Foiled Golden Damask Design Hindu wedding Card</div>
+                    <div class="card-price">7/Pcs. Without Print</div>
+                    <div class="min-order">Minimum Order should be upto 50 Pcs.</div>
+                </div>
+                
+                <!-- Second row -->
+                <div class="card">
+                    <div class="card-title">OM Calligraphy Gold Foiled Golden Damask Design Hindu wedding Card</div>
+                    <div class="card-price">7/Pcs. Without Print</div>
+                    <div class="min-order">Minimum Order should be upto 50 Pcs.</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Swastik Calligraphy Gold Foiled Golden Damask Design Hindu wedding Card</div>
+                    <div class="card-price">7/Pcs. Without Print</div>
+                    <div class="min-order">Minimum Order should be upto 50 Pcs.</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Cross Calligraphy Gold Foiled Golden Damask Design Hindu wedding Card</div>
+                    <div class="card-price">7/Pcs. Without Print</div>
+                    <div class="min-order">Minimum Order should be upto 50 Pcs.</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">OM Calligraphy Gold Foiled Golden Damask Design Hindu wedding Card</div>
+                    <div class="card-price">7/Pcs. Without Print</div>
+                    <div class="min-order">Minimum Order should be upto 50 Pcs.</div>
+                </div>
+            </div>
+            
+            <div class="category-header">
+                <h3>Medium Cards</h3>
+            </div>
+            
+            <div class="card-container">
+                <!-- Medium Cards Section -->
+                <div class="card">
+                    <div class="card-title">OM Calligraphy Gold Foiled Golden Damask Design Hindu wedding Card</div>
+                    <div class="card-price">7/Pcs. Without Print</div>
+                    <div class="min-order">Minimum Order should be upto 50 Pcs.</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Swastik Calligraphy Gold Foiled Golden Damask Design Hindu wedding Card</div>
+                    <div class="card-price">7/Pcs. Without Print</div>
+                    <div class="min-order">Minimum Order should be upto 50 Pcs.</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Cross Calligraphy Gold Foiled Golden Damask Design Hindu wedding Card</div>
+                    <div class="card-price">7/Pcs. Without Print</div>
+                    <div class="min-order">Minimum Order should be upto 50 Pcs.</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">OM Calligraphy Gold Foiled Golden Damask Design Hindu wedding Card</div>
+                    <div class="card-price">7/Pcs. Without Print</div>
+                    <div class="min-order">Minimum Order should be upto 50 Pcs.</div>
+                </div>
+                
+                <!-- Medium cards second row -->
+                <div class="card">
+                    <div class="card-title">OM Calligraphy Gold Foiled Golden Damask Design Hindu wedding Card</div>
+                    <div class="card-price">7/Pcs. Without Print</div>
+                    <div class="min-order">Minimum Order should be upto 50 Pcs.</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Swastik Calligraphy Gold Foiled Golden Damask Design Hindu wedding Card</div>
+                    <div class="card-price">7/Pcs. Without Print</div>
+                    <div class="min-order">Minimum Order should be upto 50 Pcs.</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Cross Calligraphy Gold Foiled Golden Damask Design Hindu wedding Card</div>
+                    <div class="card-price">7/Pcs. Without Print</div>
+                    <div class="min-order">Minimum Order should be upto 50 Pcs.</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">OM Calligraphy Gold Foiled Golden Damask Design Hindu wedding Card</div>
+                    <div class="card-price">7/Pcs. Without Print</div>
+                    <div class="min-order">Minimum Order should be upto 50 Pcs.</div>
+                </div>
+            </div>
+            
+            <div class="category-header">
+                <h3>General Cards</h3>
+            </div>
+            
+            <div class="card-container">
+                <!-- General Cards Section -->
+                <div class="card">
+                    <div class="card-title">OM Calligraphy Gold Foiled Golden Damask Design Hindu wedding Card</div>
+                    <div class="card-price">7/Pcs. Without Print</div>
+                    <div class="min-order">Minimum Order should be upto 100 Pcs.</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Swastik Calligraphy Gold Foiled Golden Damask Design Hindu wedding Card</div>
+                    <div class="card-price">7/Pcs. Without Print</div>
+                    <div class="min-order">Minimum Order should be upto 100 Pcs.</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Cross Calligraphy Gold Foiled Golden Damask Design Hindu wedding Card</div>
+                    <div class="card-price">7/Pcs. Without Print</div>
+                    <div class="min-order">Minimum Order should be upto 100 Pcs.</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">OM Calligraphy Gold Foiled Golden Damask Design Hindu wedding Card</div>
+                    <div class="card-price">7/Pcs. Without Print</div>
+                    <div class="min-order">Minimum Order should be upto 100 Pcs.</div>
+                </div>
+                
+                <!-- General cards second row -->
+                <div class="card">
+                    <div class="card-title">OM Calligraphy Gold Foiled Golden Damask Design Hindu wedding Card</div>
+                    <div class="card-price">7/Pcs. Without Print</div>
+                    <div class="min-order">Minimum Order should be upto 100 Pcs.</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Swastik Calligraphy Gold Foiled Golden Damask Design Hindu wedding Card</div>
+                    <div class="card-price">7/Pcs. Without Print</div>
+                    <div class="min-order">Minimum Order should be upto 100 Pcs.</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Cross Calligraphy Gold Foiled Golden Damask Design Hindu wedding Card</div>
+                    <div class="card-price">7/Pcs. Without Print</div>
+                    <div class="min-order">Minimum Order should be upto 100 Pcs.</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">OM Calligraphy Gold Foiled Golden Damask Design Hindu wedding Card</div>
+                    <div class="card-price">7/Pcs. Without Print</div>
+                    <div class="min-order">Minimum Order should be upto 100 Pcs.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

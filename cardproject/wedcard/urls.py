@@ -8,12 +8,12 @@ urlpatterns = [
     path(""              , views.home,        name="home"),
     # path("about/"        , views.about,       name="about"),
     path("update/"       , views.update,       name="update"),
-    path("cards/"       , views.cards,       name="cards"),
+    path("cards/"       , views.list_cards,       name="cards"),
     # path("contact/"      , views.contact,     name="contact"),
     # path("notice/"       , views.notice,       name="notice"),
     # path("news/"         , views.news,           name="news"),
     # path("remarks/"      , views.remarks,     name="remarks"),
-    path('card/<int:pk>/', views.detail,      name='detail'),
+    # path('card/<int:pk>/', views.detail,      name='detail'),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
