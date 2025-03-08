@@ -1,5 +1,171 @@
 {% extends 'wedcard/base.html' %}
 
 {% block card_list %}
-
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Cards</title>
+    <link rel="stylesheet" href="{% static 'css/wedding_cards.css' %}">
+</head>
+<body>
+    <div class="header">
+        <h2>Wedding Cards (Religion)</h2>
+    </div>
+    
+    <div class="header">
+        <h3>Premium Cards</h3>
+    </div>
+    
+    <div class="container clearfix">
+        <div class="sidebar">
+            <h3>Wedding Invitation</h3>
+            <h4>शादी कार्ड</h4>
+            
+            <p>By Categories</p>
+            
+            <div class="filter-section">
+                <div class="filter-title">Rate</div>
+                <div class="filter-options">
+                    <input type="text"> upto <input type="text">
+                    <div>
+                        <a href="?sort=high_to_low">High to Low</a> | <a href="?sort=low_to_high">Low to High</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="filter-section">
+                <div class="filter-title">Rate</div>
+                <div class="filter-options">
+                    <input type="text"> upto
+                </div>
+            </div>
+            
+            <div class="filter-section">
+                <div class="filter-title">Colour</div>
+                <div class="filter-options">
+                    {% for color in colors %}
+                    <label>
+                        <input type="checkbox" name="color" value="{{ color.id }}"> {{ color.name }}
+                    </label>
+                    {% endfor %}
+                </div>
+            </div>
+            
+            <div class="filter-section">
+                <div class="filter-title">Shape</div>
+                <div class="filter-options">
+                    {% for shape in shapes %}
+                    <label>
+                        <input type="checkbox" name="shape" value="{{ shape.id }}"> {{ shape.name }}
+                    </label>
+                    {% endfor %}
+                </div>
+            </div>
+            
+            <div class="filter-section">
+                <div class="filter-title">Filters</div>
+                <div>Availability</div>
+                <div>In Stock</div>
+                <input type="text"> Pcs. Available
+                {% if not in_stock %}
+                <div class="error-message">Sorry, Look for another card you are looking is currently unavailable</div>
+                {% endif %}
+            </div>
+            
+            <div>
+                <a href="{% url 'all_categories' %}">View All Categories</a>
+            </div>
+            
+            <ul class="categories-list">
+                {% for category in categories %}
+                <li><a href="{% url 'category_detail' category.slug %}">{{ category.name }}</a></li>
+                {% endfor %}
+            </ul>
+            
+            <p>All other Occasion Cards will used in as Invitation cards after Printing.</p>
+            
+            <p>We mostly believe that occasion</p>
+        </div>
+        
+        <div class="main-content">
+            <!-- Premium Cards Section -->
+            <div class="card-grid">
+                {% for card in premium_cards %}
+                <div class="card">
+                    <div class="card-image">
+                        {% if card.image %}
+                        <img src="{{ card.image.url }}" alt="{{ card.details }}">
+                        {% else %}
+                        <img src="{% static 'images/placeholder.jpg' %}" alt="Card placeholder">
+                        {% endif %}
+                    </div>
+                    <div class="card-content">
+                        <div class="card-details">{{ card.details }}</div>
+                        <div class="card-price">7/Pcs. Without Print</div>
+                        <div class="min-order">Minimum Order should be upto {{ card.min }} Pcs.</div>
+                    </div>
+                </div>
+                {% empty %}
+                <p>No premium cards available.</p>
+                {% endfor %}
+            </div>
+            
+            <div class="category-header">
+                <h3>Medium Cards</h3>
+            </div>
+            
+            <!-- Medium Cards Section -->
+            <div class="card-grid">
+                {% for card in medium_cards %}
+                <div class="card">
+                    <div class="card-image">
+                        {% if card.image %}
+                        <img src="{{ card.image.url }}" alt="{{ card.details }}">
+                        {% else %}
+                        <img src="{% static 'images/placeholder.jpg' %}" alt="Card placeholder">
+                        {% endif %}
+                    </div>
+                    <div class="card-content">
+                        <div class="card-details">{{ card.details }}</div>
+                        <div class="card-price">7/Pcs. Without Print</div>
+                        <div class="min-order">Minimum Order should be upto {{ card.min }} Pcs.</div>
+                    </div>
+                </div>
+                {% empty %}
+                <p>No medium cards available.</p>
+                {% endfor %}
+            </div>
+            
+            <div class="category-header">
+                <h3>General Cards</h3>
+            </div>
+            
+            <!-- General Cards Section -->
+            <div class="card-grid">
+                {% for card in general_cards %}
+                <div class="card">
+                    <div class="card-image">
+                        {% if card.image %}
+                        <img src="{{ card.image.url }}" alt="{{ card.details }}">
+                        {% else %}
+                        <img src="{% static 'images/placeholder.jpg' %}" alt="Card placeholder">
+                        {% endif %}
+                    </div>
+                    <div class="card-content">
+                        <div class="card-details">{{ card.details }}</div>
+                        <div class="card-price">7/Pcs. Without Print</div>
+                        <div class="min-order">Minimum Order should be upto {{ card.min }} Pcs.</div>
+                    </div>
+                </div>
+                {% empty %}
+                <p>No general cards available.</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
 {% endblock %}

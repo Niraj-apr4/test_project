@@ -26,8 +26,8 @@ def update(request):
 #     return render(request, 'wedcard/about.html', {})
 
 def list_cards(request):
-    cards = wedding_card.objects.all()  # Fetch all Sample objects
-    return render(request, 'wedcard/list_cards.html', {'cards': cards})
+    card_list = wedding_card.objects.all()  # Fetch all Sample objects
+    return render(request, 'wedcard/list_cards.html', {'card_list': card_list})
 
 # def detail(request, pk):
 #     card = get_object_or_404(wedding_card, pk=pk)

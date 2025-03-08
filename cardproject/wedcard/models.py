@@ -10,9 +10,14 @@ class wedding_card(models.Model):
         default='premium',
         max_length=11
     )
+    details = models.TextField(
+        null = True,
+        help_text="Maximum 100 words"
+    )
     created_at = models.DateTimeField(auto_now_add=True)
     model_id = models.CharField(max_length=100)
     price = models.DecimalField(max_digits=10, decimal_places=2)
+    minimum = models.IntegerField(null = True)
     front_image = models.ImageField(
         upload_to='wedding_cards/',
         help_text='Upload front JPG image for the wedding card',
